@@ -11,3 +11,5 @@
 * IRespository?
 
 * ListResultDto? read only
+
+* TestBase?
