@@ -13,3 +13,5 @@
 * ListResultDto? read only
 
 * TestBase?
+
+* 国际化如何实现?
