@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Abp.Events.Bus;
+
+namespace EventCloud.Domain.Event
+{
+    public static class DomainEvents
+    {
+        public static IEventBus EventBus { get; set; }
+
+        static DomainEvents()
+        {
+            EventBus = Abp.Events.Bus.EventBus.Default;
+        }
+    }
+}

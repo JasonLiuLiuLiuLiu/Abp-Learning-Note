@@ -13,4 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\EventCloud.Core\EventCloud.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Event\Dtos\" />
+  </ItemGroup>
 </Project>
