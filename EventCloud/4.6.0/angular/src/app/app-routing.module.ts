@@ -7,8 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { UsersComponent } from './users/users.component';
 import { TenantsComponent } from './tenants/tenants.component';
 import { RolesComponent } from 'app/roles/roles.component';
-import { EventsComponent } from 'app/events/events.component';
-import { EventDetailComponent } from 'app/events/event-detail/event-detail.component';
+import { ChangePasswordComponent } from './users/change-password/change-password.component';
 
 @NgModule({
     imports: [
@@ -17,13 +16,12 @@ import { EventDetailComponent } from 'app/events/event-detail/event-detail.compo
                 path: '',
                 component: AppComponent,
                 children: [
-                    { path: 'home', component: HomeComponent, canActivate: [AppRouteGuard] },
+                    { path: 'home', component: HomeComponent,  canActivate: [AppRouteGuard] },
                     { path: 'users', component: UsersComponent, data: { permission: 'Pages.Users' }, canActivate: [AppRouteGuard] },
                     { path: 'roles', component: RolesComponent, data: { permission: 'Pages.Roles' }, canActivate: [AppRouteGuard] },
                     { path: 'tenants', component: TenantsComponent, data: { permission: 'Pages.Tenants' }, canActivate: [AppRouteGuard] },
-                    { path: 'events', component: EventsComponent, data: { permission: 'Pages.Events' }, canActivate: [AppRouteGuard] },
-                    { path: 'events/:eventId', component: EventDetailComponent },
-                    { path: 'about', component: AboutComponent }
+                    { path: 'about', component: AboutComponent },
+                    { path: 'update-password', component: ChangePasswordComponent }
                 ]
             }
         ])
